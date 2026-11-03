@@ -1,0 +1,24 @@
+print("="*15)
+print("Welcome To Royal Hotel")
+print("="*15)
+
+user_name = input("Enter User Name : ")
+Room_type = input("Room type (Normal / Suite) : ")
+number_nights = int(input("Enter the number of nights : "))
+if Room_type == "Normal":
+    price = 50
+elif Room_type == "Suite":
+    price = 100
+else:
+    price = 0
+total = price * number_nights
+
+print("------Invoice------")
+
+print("User Name", user_name)
+print("Room Type", Room_type)
+print("Number Nights", number_nights)
+print("Total price", total , "$")
+
+print("="*15)
+print("Thank You For Visiting Royal Hotel")
